@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Sophia Angelina Silveira — Estudante de TI &amp; Design Gráfico. Um espaço autoral, delicado e criativo com estética kawaii.">
+  <meta name="author" content="Sophia Angelina Silveira">
+  <meta name="theme-color" content="#FF8CAD">
+  <title>Sophia Angelina Silveira | Portfólio Kawaii</title>
+
+  <!-- Google Fonts: Princess Sofia, Butterfly Kids & Quicksand para apoio de legibilidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&amp;family=Princess+Sofia&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Elemento de foco inicial acessível para leitores de tela -->
+  <a href="#hero" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho e Barra de Navegação Fixa -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Navegação Principal">
+      <a href="#hero" class="nav-brand" aria-label="Voltar para a página inicial de Sophia Angelina">
+        <span class="brand-icon" aria-hidden="true">
+          <!-- Ícone Vetorial de Laço Kawaii -->
+          <svg viewBox="0 0 40 32" class="svg-bow-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 16C12 8 2 9 4 17C6 24 16 18 18 16Z" fill="#FF8CAD" stroke="#6D1E3E" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M23 16C28 8 38 9 36 17C34 24 24 18 22 16Z" fill="#FF8CAD" stroke="#6D1E3E" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M16 19L11 29C10 31 13 32 15 30L20 20" fill="#FFC7D7" stroke="#6D1E3E" stroke-width="2" stroke-linecap="round"/>
+            <path d="M24 19L29 29C30 31 27 32 25 30L20 20" fill="#FFC7D7" stroke="#6D1E3E" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="16" r="4.5" fill="#FFDBE5" stroke="#6D1E3E" stroke-width="2"/>
+            <circle cx="18.5" cy="14.5" r="1.2" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        <span class="brand-text">Sophia Angelina</span>
+      </a>
+
+      <!-- Botão Menu Mobile (Acessível) -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Lista de Links de Navegação -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sobre" class="nav-link">Sobre mim</a>
+        </li>
+        <li class="nav-item">
+          <a href="#habilidades" class="nav-link">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projetos" class="nav-link">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contato" class="nav-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         1. SEÇÃO HERO (INÍCIO)
+         ==================================================================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <!-- Decorações Flutuantes de Fundo (Aria-Hidden) -->
+      <div class="decorations-layer" aria-hidden="true">
+        <span class="floating-sparkle sparkle-1">✨</span>
+        <span class="floating-sparkle sparkle-2">🌸</span>
+        <span class="floating-sparkle sparkle-3">💖</span>
+        <span class="floating-sparkle sparkle-4">⭐</span>
+        <span class="floating-sparkle sparkle-5">🎀</span>
+        <span class="floating-sparkle sparkle-6">✨</span>
+        <span class="floating-sparkle sparkle-7">🤍</span>
+      </div>
+
+      <div class="hero-container">
+        <!-- Card Central Kawaii -->
+        <article class="hero-card fade-in-element">
+          <!-- Enfeite de Laço no Topo do Card -->
+          <div class="card-bow-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 60 48" class="svg-hero-bow" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 24C17 12 3 13 6 25C9 35 24 27 27 24Z" fill="#FF8CAD" stroke="#5A1E38" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M34 24C43 12 57 13 54 25C51 35 36 27 33 24Z" fill="#FF8CAD" stroke="#5A1E38" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M23 28L15 42C13 45 18 47 21 44L28 30" fill="#FFC7D7" stroke="#5A1E38" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M37 28L45 42C47 45 42 47 39 44L32 30" fill="#FFC7D7" stroke="#5A1E38" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="30" cy="24" rx="7" ry="6.5" fill="#FFDBE5" stroke="#5A1E38" stroke-width="2.5"/>
+              <circle cx="28" cy="22" r="1.8" fill="#FFFFFF"/>
+            </svg>
+          </div>
+
+          <!-- Tag de Identificação Curta -->
+          <div class="hero-tag-badge">
+            <span class="badge-icon" aria-hidden="true">🎀</span>
+            <span class="badge-text">Estudante de TI &amp; Design Gráfico</span>
+            <span class="badge-icon" aria-hidden="true">🎀</span>
+          </div>
+
+          <!-- Retrato Autoral da Sophia com Moldura Kawaii -->
+          <div class="hero-portrait-wrapper">
+            <div class="hero-portrait-frame">
+              <img 
+                src="assets/sophia.jpg" 
+                alt="Retrato de Sophia Angelina Silveira com franja e camiseta temática da Hello Kitty" 
+                class="hero-portrait-img"
+                width="170"
+                height="170"
+                loading="eager"
+              >
+              <span class="portrait-sparkle-badge" aria-hidden="true">✨</span>
+              <span class="portrait-heart-badge" aria-hidden="true">💖</span>
+            </div>
+          </div>
+
+          <!-- Título com Nome em Destaque -->
+          <h1 class="hero-title" id="hero-title">Sophia Angelina Silveira</h1>
+
+          <!-- Frase de Apresentação -->
+          <p class="hero-tagline">
+            Criando universos digitais com carinho, criatividade e tecnologia:
+            onde cada linha de código ganha vida com estética, afeto e design autoral.
+          </p>
+
+          <!-- Pílulas de Interesses Especiais -->
+          <div class="hero-interests" aria-label="Interesses Principais">
+            <span class="interest-pill">
+              <span class="pill-sparkle" aria-hidden="true">🎨</span> Design Criativo
+            </span>
+            <span class="interest-pill">
+              <span class="pill-sparkle" aria-hidden="true">📊</span> Análise de Dados
+            </span>
+            <span class="interest-pill">
+              <span class="pill-sparkle" aria-hidden="true">💻</span> Tecnologia &amp; Código
+            </span>
+          </div>
+
+          <!-- Ações Principais -->
+          <div class="hero-actions">
+            <a href="#sobre" class="btn btn-primary" id="btn-conhecer-mundo">
+              <span class="btn-text">Conheça meu mundo</span>
+              <span class="btn-sparkle" aria-hidden="true">✨</span>
+            </a>
+
+            <a href="#contato" class="btn btn-secondary">
+              <span class="btn-text">Fale Comigo</span>
+              <span class="btn-sparkle" aria-hidden="true">💌</span>
+            </a>
+          </div>
+
+          <!-- Detalhes Fofos de Rodapé do Card -->
+          <div class="card-footer-kawaii" aria-hidden="true">
+            <span class="star-accent">★</span>
+            <span class="line-divider"></span>
+            <span class="heart-accent">♥</span>
+            <span class="line-divider"></span>
+            <span class="star-accent">★</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         2. SEÇÃO SOBRE MIM
+         ==================================================================== -->
+    <section class="content-section" id="sobre" aria-labelledby="sobre-title">
+      <div class="section-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header fade-in-element">
+          <span class="section-badge" aria-hidden="true">🎀 Minha Trajetória</span>
+          <h2 class="section-title" id="sobre-title">Sobre Mim</h2>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-icon">🌸</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Conteúdo em Duas Colunas: Cartão Pessoal e Texto -->
+        <div class="sobre-grid">
+          <!-- Coluna 1: Card de Destaque Pessoal -->
+          <div class="sobre-profile-card fade-in-element">
+            <div class="profile-avatar-frame">
+              <img 
+                src="assets/sophia.jpg" 
+                alt="Retrato de Sophia Angelina Silveira sorrindo delicadamente" 
+                class="profile-avatar-img"
+                width="160"
+                height="160"
+                loading="lazy"
+              >
+              <span class="avatar-ribbon-tag" aria-hidden="true">🎀</span>
+            </div>
+
+            <h3 class="profile-name">Sophia Angelina</h3>
+            <p class="profile-role">17 anos • Estudante de TI &amp; Design</p>
+
+            <ul class="profile-info-list">
+              <li>
+                <span class="info-icon" aria-hidden="true">🎓</span>
+                <span class="info-text">Técnico em Informática integrado ao EM</span>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">🎨</span>
+                <span class="info-text">Foco em Design Gráfico &amp; Web Autoral</span>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">📊</span>
+                <span class="info-text">Interesse em Análise de Dados</span>
+              </li>
+              <li>
+                <span class="info-icon" aria-hidden="true">🎯</span>
+                <span class="info-text">Planos futuros: Tech &amp; Carreira Policial</span>
+              </li>
+            </ul>
+
+            <div class="profile-card-badge">
+              <span class="sparkle-anim" aria-hidden="true">✨</span>
+              <span>Criatividade &amp; Curiosidade</span>
+              <span class="sparkle-anim" aria-hidden="true">✨</span>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Blocos de Texto Agradáveis e Acolhedores -->
+          <div class="sobre-text-column fade-in-element">
+            <article class="bio-card">
+              <div class="bio-card-header">
+                <span class="bio-icon" aria-hidden="true">💻</span>
+                <h3 class="bio-subtitle">Curiosidade, Tecnologia e Criação</h3>
+              </div>
+              <p class="bio-paragraph">
+                Sou estudante de Tecnologia da Informação e Design Gráfico e estou construindo minha trajetória profissional com muita curiosidade, criatividade e vontade de aprender. Desde pequena, tenho interesse por tecnologia e gosto de entender como as coisas funcionam. Hoje, busco desenvolver meus conhecimentos por meio de estudos e projetos, principalmente nas áreas de design, desenvolvimento web e análise de dados.
+              </p>
+            </article>
+
+            <article class="bio-card">
+              <div class="bio-card-header">
+                <span class="bio-icon" aria-hidden="true">🌟</span>
+                <h3 class="bio-subtitle">Metas e Visão de Futuro</h3>
+              </div>
+              <p class="bio-paragraph">
+                Para o meu futuro, quero continuar crescendo profissionalmente na área de tecnologia, explorando oportunidades que me permitam unir raciocínio lógico e criatividade. Também tenho interesse em prestar concursos públicos para ingressar na área policial, buscando conhecer melhor as possibilidades de carreira nesse setor. Quero construir um futuro com estabilidade, aprendizado constante e oportunidades de evolução pessoal e profissional.
+              </p>
+            </article>
+
+            <!-- Pílulas de Destaque de Valores -->
+            <div class="sobre-highlights">
+              <div class="highlight-item">
+                <span class="highlight-emoji" aria-hidden="true">✨</span>
+                <span class="highlight-title">Raciocínio &amp; Estética</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-emoji" aria-hidden="true">🛡️</span>
+                <span class="highlight-title">Estabilidade &amp; Foco</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-emoji" aria-hidden="true">🌸</span>
+                <span class="highlight-title">Evolução Contínua</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. SEÇÃO HABILIDADES
+         ==================================================================== -->
+    <section class="content-section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="section-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header fade-in-element">
+          <span class="section-badge" aria-hidden="true">🌸 Estudos &amp; Práticas</span>
+          <h2 class="section-title" id="habilidades-title">Habilidades &amp; Interesses</h2>
+          <p class="section-intro">
+            Áreas que estudo, pratico e busco aprimorar com curiosidade, afeto e dedicação contínua.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-icon">⭐</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Grade de Categorias em Cards Kawaii -->
+        <div class="skills-grid">
+          <!-- Categoria 1: Tecnologia -->
+          <article class="skill-category-card fade-in-element">
+            <div class="card-corner-ribbon" aria-hidden="true">💻</div>
+            <div class="category-icon-wrapper">
+              <span class="category-icon" aria-hidden="true">🖥️</span>
+            </div>
+            <h3 class="category-title">Tecnologia</h3>
+            <p class="category-desc">
+              Fundamentos práticos de informática, funcionamento de sistemas e paixão pela web.
+            </p>
+            <ul class="skills-items-list">
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Interesse contínuo em Tecnologia da Informação</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Estudos e práticas relacionados à informática</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Curiosidade sobre o funcionamento de softwares e sistemas</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Interesse em desenvolvimento de páginas web</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Categoria 2: Design e Criatividade -->
+          <article class="skill-category-card fade-in-element">
+            <div class="card-corner-ribbon" aria-hidden="true">🎨</div>
+            <div class="category-icon-wrapper">
+              <span class="category-icon" aria-hidden="true">🎀</span>
+            </div>
+            <h3 class="category-title">Design &amp; Criatividade</h3>
+            <p class="category-desc">
+              Sensibilidade estética, criação de layouts charmosos e personalização de interfaces.
+            </p>
+            <ul class="skills-items-list">
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Interesse em Design Gráfico e comunicação visual</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Criação de páginas autorais e personalizadas</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Criatividade na composição de layouts e elementos visuais</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Interesse em decoração e harmonia de interfaces</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Categoria 3: Desenvolvimento Pessoal -->
+          <article class="skill-category-card fade-in-element">
+            <div class="card-corner-ribbon" aria-hidden="true">🌟</div>
+            <div class="category-icon-wrapper">
+              <span class="category-icon" aria-hidden="true">🌸</span>
+            </div>
+            <h3 class="category-title">Desenvolvimento Pessoal</h3>
+            <p class="category-desc">
+              Postura aberta para aprender, disciplina, curiosidade investigativa e evolução.
+            </p>
+            <ul class="skills-items-list">
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Curiosidade constante e vontade ativa de aprender</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Interesse em desenvolver novas habilidades práticas</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Busca ativa por crescimento acadêmico e profissional</span>
+              </li>
+              <li>
+                <span class="bullet-heart" aria-hidden="true">♥</span>
+                <span>Raciocínio lógico aliado à sensibilidade humana</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. SEÇÃO PROJETOS
+         ==================================================================== -->
+    <section class="content-section" id="projetos" aria-labelledby="projetos-title">
+      <div class="section-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header fade-in-element">
+          <span class="section-badge" aria-hidden="true">✨ Criações &amp; Código</span>
+          <h2 class="section-title" id="projetos-title">Meus Projetos</h2>
+          <p class="section-intro">
+            Galeria visual para apresentar meus projetos de tecnologia e design. Espaço estruturado para receber novas criações conforme meus estudos evoluem.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-icon">🎀</span>
+            <span class="divider-line"></span>
+          </div>
+
+          <!-- Botão Destacado do GitHub -->
+          <div class="github-action-wrapper">
+            <a 
+              href="https://github.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-github"
+              aria-label="Visite meu perfil no GitHub (abre em uma nova aba)"
+            >
+              <svg viewBox="0 0 24 24" class="svg-github-icon" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>Visite meu GitHub</span>
+              <span class="btn-sparkle" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Grade de Projetos -->
+        <div class="projects-grid">
+          <!-- Projeto 1: Portfólio Pessoal Autoral (Projeto Real Existente) -->
+          <article class="project-card fade-in-element">
+            <div class="project-thumb-wrapper">
+              <div class="project-mockup mockup-portfolio">
+                <div class="mockup-header-bar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-inner-content">
+                  <span class="mockup-sparkle" aria-hidden="true">🌸</span>
+                  <span class="mockup-title-preview">Sophia Angelina</span>
+                  <span class="mockup-badge-preview">Kawaii Portfolio</span>
+                </div>
+              </div>
+              <span class="project-status-pill status-active">Projeto Atual</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Portfólio Pessoal Autoral</h3>
+              <p class="project-desc">
+                Website pessoal desenvolvido com identidade visual delicada, paleta rosa autoral, animações suaves e código puro sem frameworks, expressando minha ligação com tecnologia e design.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5 Semântico</span>
+                <span class="tech-tag">CSS3 Puro</span>
+                <span class="tech-tag">JavaScript Vanilla</span>
+                <span class="tech-tag">Design Kawaii</span>
+              </div>
+
+              <div class="project-footer-action">
+                <a href="#hero" class="btn btn-secondary btn-sm">
+                  <span>Explorar no topo</span>
+                  <span class="btn-sparkle" aria-hidden="true">✨</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2: Estudos em Design Gráfico (Espaço Elegante Reservado) -->
+          <article class="project-card fade-in-element">
+            <div class="project-thumb-wrapper">
+              <div class="project-mockup mockup-design">
+                <div class="mockup-header-bar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-inner-content">
+                  <span class="mockup-sparkle" aria-hidden="true">🎨</span>
+                  <span class="mockup-title-preview">Composições Visuais</span>
+                  <span class="mockup-badge-preview">Identidade &amp; Layout</span>
+                </div>
+              </div>
+              <span class="project-status-pill status-soon">Em Breve</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Estudos em Design &amp; Layout</h3>
+              <p class="project-desc">
+                Espaço reservado para projetos de comunicação visual, tipografia, cartões e interfaces criativas que estou desenvolvendo em meus estudos. Novos trabalhos serão adicionados em breve!
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Design Gráfico</span>
+                <span class="tech-tag">Composição Visual</span>
+                <span class="tech-tag">Cores &amp; Estética</span>
+              </div>
+
+              <div class="project-footer-action">
+                <span class="coming-soon-label">
+                  <span class="heart-pulse" aria-hidden="true">💖</span> Em preparação com carinho
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3: Práticas de TI & Web (Espaço Elegante Reservado) -->
+          <article class="project-card fade-in-element">
+            <div class="project-thumb-wrapper">
+              <div class="project-mockup mockup-code">
+                <div class="mockup-header-bar">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-inner-content">
+                  <span class="mockup-sparkle" aria-hidden="true">💻</span>
+                  <span class="mockup-title-preview">TI &amp; Dados</span>
+                  <span class="mockup-badge-preview">Práticas de Código</span>
+                </div>
+              </div>
+              <span class="project-status-pill status-soon">Em Breve</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Práticas de Informática &amp; Dados</h3>
+              <p class="project-desc">
+                Projetos e exercícios práticos do curso técnico de Informática integrando lógica, estrutura de páginas e noções de análise de dados.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Tecnologia da Informação</span>
+                <span class="tech-tag">Desenvolvimento Web</span>
+                <span class="tech-tag">Análise de Dados</span>
+              </div>
+
+              <div class="project-footer-action">
+                <span class="coming-soon-label">
+                  <span class="heart-pulse" aria-hidden="true">✨</span> Próximas atualizações
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. SEÇÃO CONTATO
+         ==================================================================== -->
+    <section class="content-section" id="contato" aria-labelledby="contato-title">
+      <div class="section-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header fade-in-element">
+          <span class="section-badge" aria-hidden="true">💌 Fale Comigo</span>
+          <h2 class="section-title" id="contato-title">Entre em Contato</h2>
+          <p class="section-intro">
+            Adoraria conversar com você! Fique à vontade para me enviar um e-mail, chamar no WhatsApp ou mandar uma mensagem pelo formulário.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-icon">💖</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Grade de Contato: Canais Diretos + Formulário -->
+        <div class="contato-grid">
+          <!-- Coluna 1: Canais Diretos Oficiais -->
+          <div class="contato-info-card fade-in-element">
+            <h3 class="info-card-title">Canais Oficiais</h3>
+            <p class="info-card-desc">
+              Você pode falar diretamente comigo por meio de qualquer um destes canais:
+            </p>
+
+            <div class="contact-channels-list">
+              <!-- Canal E-mail -->
+              <div class="channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  ✉️
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">E-mail:</span>
+                  <a href="mailto:40481@raphaeldisanto.com.br" class="channel-link">
+                    40481@raphaeldisanto.com.br
+                  </a>
+                </div>
+                <a href="mailto:40481@raphaeldisanto.com.br" class="btn btn-primary btn-sm channel-btn">
+                  Enviar E-mail 💌
+                </a>
+              </div>
+
+              <!-- Canal WhatsApp / Telefone -->
+              <div class="channel-item">
+                <div class="channel-icon-box" aria-hidden="true">
+                  💬
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">WhatsApp / Telefone:</span>
+                  <a href="https://wa.me/5519971683285" target="_blank" rel="noopener noreferrer" class="channel-link">
+                    (19) 97168-3285
+                  </a>
+                </div>
+                <a href="https://wa.me/5519971683285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm channel-btn">
+                  Abrir WhatsApp 🌸
+                </a>
+              </div>
+            </div>
+
+            <div class="welcome-quote-box">
+              <span class="quote-sparkle" aria-hidden="true">🎀</span>
+              <p class="quote-text">
+                "Estou sempre aberta a novas conexões, aprendizados e ideias criativas. Seja bem-vindo(a) ao meu cantinho!"
+              </p>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário com Validação em JavaScript -->
+          <div class="contato-form-card fade-in-element">
+            <h3 class="form-card-title">Envie uma Mensagem</h3>
+            <p class="form-disclaimer">
+              Preencha os campos abaixo para preparar sua mensagem. (Formulário demonstrativo com acionamento amigável via e-mail).
+            </p>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Campo Nome -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Seu Nome <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">👤</span>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="Como posso te chamar?" 
+                    required 
+                    autocomplete="name"
+                  >
+                </div>
+                <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Campo E-mail -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Seu E-mail <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">📧</span>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="seuemail@exemplo.com" 
+                    required 
+                    autocomplete="email"
+                  >
+                </div>
+                <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Campo Mensagem -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Mensagem <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="4" 
+                    placeholder="Escreva sua mensagem com carinho..." 
+                    required
+                  ></textarea>
+                </div>
+                <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Botão de Envio -->
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-contact">
+                <span class="btn-text">Enviar Mensagem</span>
+                <span class="btn-sparkle" aria-hidden="true">💌</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contêiner de Notificações Toast Kawaii -->
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Rodapé Autoral Kawaii -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bow-icon" aria-hidden="true">
+        <svg viewBox="0 0 40 32" class="svg-bow-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 16C12 8 2 9 4 17C6 24 16 18 18 16Z" fill="#FF8CAD" stroke="#6D1E3E" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M23 16C28 8 38 9 36 17C34 24 24 18 22 16Z" fill="#FF8CAD" stroke="#6D1E3E" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M16 19L11 29C10 31 13 32 15 30L20 20" fill="#FFC7D7" stroke="#6D1E3E" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 19L29 29C30 31 27 32 25 30L20 20" fill="#FFC7D7" stroke="#6D1E3E" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="16" r="4.5" fill="#FFDBE5" stroke="#6D1E3E" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <p class="footer-text">
+        Criado com afeto, código e criatividade por <strong>Sophia Angelina Silveira</strong> 💕
+      </p>
+      <p class="footer-subtext">
+        Estudante de TI &amp; Design Gráfico • Estética Kawaii &amp; Design Autoral • 2026
+      </p>
+
+      <a href="#hero" class="back-to-top-link" aria-label="Voltar ao início da página">
+        <span>Voltar ao topo</span>
+        <span aria-hidden="true">↑</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script de Interatividades e Acessibilidade -->
+  <script src="script.js"></script>
+</body>
+</html>
